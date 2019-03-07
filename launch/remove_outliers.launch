@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <node pkg="remove_pcl_outliers" name="filtered_scene" type="filtered_scene" output="screen"> 
+        <rosparam file="$(find remove_pcl_outliers)/config/parameters.yaml" command="load" />
+    </node>
+</launch>
